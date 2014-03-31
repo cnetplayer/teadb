@@ -1,0 +1,30 @@
+extends layout
+
+block content
+	#page_body
+		h1= title
+		form#newTea(name="newtea",method="post",action="/addtea")
+			label(for="teaNumber") Inventory #: 
+			input#teaNumber(type="number", placeholder="Tea Inventory #", name="teanumber")
+			br
+			label(for="teaName") Name: 
+			input#teaName(type="text", placeholder="Name of Tea", name="teaname")
+			br
+			label(for="teaOrigin") Origin: 
+			input#teaOrigin(type="text", placeholder="Tea Origin", name="teaorigin")
+			br
+			label(for="teaType") Type: 
+			input#teaType(type="text", placeholder="Tea Type", name="teatype")
+			br
+			label(for="currentStock") Current Amount In Stock: 
+			input#currentStock(type="number", placeholder="In Stock(in lbs)", name="currentstock")
+			br
+			br
+			button#submit(type="submit") Save Tea
+			button#back(type="reset") Reset Form
+			br
+			br
+			a(href="/list") Go Back To Current Inventory List
+	hr
+	#validation_footer
+		h2#tagline Your Total Tea Education

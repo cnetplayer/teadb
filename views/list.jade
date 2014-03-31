@@ -1,0 +1,25 @@
+extends layout
+
+block content
+	#page_body
+		h1= title
+		table#crud_table
+			tr
+				th= 'Inventory #'
+				th= 'Name'
+				th= 'Origin'
+				th= 'Type'
+				th= 'Current Amount In Stock'
+			each tea, index in list
+				tr
+					td= tea.number
+					td= tea.name
+					td= tea.origin
+					td= tea.type
+					td= tea.currentStock + ' lbs.'
+			tr#last_row
+				td(colspan="5")
+					a(href="/newtea") Add A New Tea
+	hr
+	#validation_footer
+		h2#tagline Your Total Tea Education

@@ -8,7 +8,8 @@ var routes = require('./routes');
 var http = require('http');
 var path = require('path');
 var monk = require('monk');
-var db = monk('mongodb://chwe7287:2285earlgrey@ds035027.mongolab.com:35027/tea');
+var connection = require('./auth');
+var db = monk(connection);
 
 var app = express();
 

@@ -1,0 +1,18 @@
+extends layout
+
+block content
+	#page_body
+		h1= title
+		p User management has not yet been enabled for this application. Please use the following credentials to login.
+		p Username: 'guest' <br> Password: 'secret'
+		hr
+		form#formLogin(method='post')
+			h3 Please Log In
+			label(for='username') Username: 
+			input#username(name='username', type='text', placeholder='username')
+			br
+			label(for='password') Password: 
+			input#password(name='password', type='password', placeholder='password')
+			br
+			br
+			input(type='submit', class='btn btn-primary', value='Log in')

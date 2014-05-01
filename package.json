@@ -1,6 +1,6 @@
 {
   "name": "tea-inventory",
-  "version": "0.0.0-9",
+  "version": "0.0.0-11",
   "private": true,
   "main": "app.js",
   "scripts": {
@@ -10,7 +10,9 @@
     "express": "3.4.0",
     "jade": "*",
     "mongodb": "*",
-    "monk": "*"
+    "monk": "*",
+    "passport": "~0.1.17",
+    "passport-local": "~0.1.6"
   },
   "engines": {
     "node": "0.10.x"

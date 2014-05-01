@@ -69,23 +69,13 @@ hr{
 #right_toc a:hover {
 	background-color: #F5EBE0;
 }
-.pullquote {
-	float: right;
-	clear: right;
-	width: 200px;
+#formLogin {
+	border: 2px dotted #63006B;
 	border-radius: 10px;
-	border: 1px solid #63006B;
-	-webkit-box-shadow: 2px 2px 5px #C3C3C3;
-	box-shadow: 2px 2px 5px #C3C3C3;
-	padding: 10px;
-	font-size: 15px;
-	background-color: #FEA640;
-	margin-top: 20px;
-	margin-right: 10px;
-	margin-left: 10px;
-	margin-bottom: 10px;
-	font-style: italic;
-	color: #FFFFFF;
+	width: 400px;
+	margin: 0px auto 10px auto;
+	padding-bottom: 10px;
+	text-align: center;
 }
 #fizzInput{
 	margin-left: auto;
@@ -109,6 +99,22 @@ hr{
 }
 #page_body a:hover {
 	background-color: #F5EBE0;
+}
+#newTea {
+	width: 500px;
+	border: 1px solid #63006B;
+	margin: 10px auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#newTea label {
+	display: inline-block;
+	width: 250px;
+	text-align:right;
+	margin: 0 15px 0 0;
+}
+#newTeaFooter {
+	text-align: center;
 }
 
 /*header banner styles*/
@@ -147,7 +153,7 @@ hr{
 	font-family:Georgia, serif;
 }
 #valid_html {
-	background-image: url(../_images/web215sprites.png);
+	background-image: url(/images/web215sprites.png);
 	background-position: 0px -50px;
 	background-repeat: no-repeat;
 	display: inline-block;
@@ -155,7 +161,7 @@ hr{
 	height: 31px;
 }
 #valid_css {
-	background-image: url(../_images/web215sprites.png);
+	background-image: url(/images/web215sprites.png);
 	background-position: 0px 0px;
 	background-repeat: no-repeat;
 	width: 88px;
@@ -179,7 +185,7 @@ hr{
 /* CRUD Record Display Table */
 #crud_table {
 	width: 75%;
-	margin: 65px auto 20px auto;
+	margin: 10px auto 20px auto;
 	text-align: center;
 	border: 1px solid #63006B;
 	border-radius: 10px;
@@ -193,4 +199,20 @@ hr{
 }
 #crud_table tr:nth-child(even) {
 	background-color: #FFFFFF;
+}
+.delete {
+	background-image: url(/images/edit_delete.gif);
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	width: 26px;
+	height: 25px;
+	display: inline-block;
+}
+.edit {
+	background-image: url(/images/edit_delete.gif);
+	background-position: -26px 0px;
+	background-repeat: no-repeat;
+	width: 26px;
+	height: 25px;
+	display: inline-block;
 }

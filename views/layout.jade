@@ -3,9 +3,15 @@ html
 	head
 		title= title
 		link(rel="stylesheet", href="styles/brand.css")
+		script(src="scripts/custom.js")
 	body
 		#page_wrapper
 			#header
 				img#logo(src="images/tt_logo.gif" alt="Tea Total Logo")
 			hr
 			block content
+			hr
+			#validation_footer
+				h2#tagline Your Total Tea Education
+				a(href="http://validator.w3.org/check?uri=referer" id="valid_html")
+				a(href="http://jigsaw.w3.org/css-validator/check/referer" id="valid_css")

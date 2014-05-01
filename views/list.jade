@@ -3,6 +3,11 @@ extends layout
 block content
 	#page_body
 		h1= title
+		p You are logged in as: <strong>Guest</strong> | 
+			a(href="/logout") Logout
+		p The following application will track current tea inventory. <br> Currently, this system does not have edit or delete capability.
+		p You may add a new tea by clicking the link at the bottom of the table to enter the tea information.
+		hr
 		table#crud_table
 			tr
 				th= 'Inventory #'
@@ -10,6 +15,8 @@ block content
 				th= 'Origin'
 				th= 'Type'
 				th= 'Current Amount In Stock'
+				th= 'Edit'
+				th= 'Delete'
 			each tea, index in list
 				tr
 					td= tea.number
@@ -17,9 +24,10 @@ block content
 					td= tea.origin
 					td= tea.type
 					td= tea.currentStock + ' lbs.'
+					td
+						a.edit(href="#", title="Edit Record")
+					td
+						a.delete(href="#", onClick="delete_user(#{tea._id});", title="Delete Record")
 			tr#last_row
-				td(colspan="5")
+				td(colspan="7")
 					a(href="/newtea") Add A New Tea
-	hr
-	#validation_footer
-		h2#tagline Your Total Tea Education
